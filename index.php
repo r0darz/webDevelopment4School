@@ -9,9 +9,15 @@
 
 <body>
     
-<div style="margin: 0% 40% 3% 40%"><?php echo file_get_contents('Navigation.html'); ?></div>
-<section id="loadable-content"><?php echo file_get_contents('main.html'); ?></section>
+<div style="margin: 0% 40% 3% 40%" id="form-load"><?php echo file_get_contents('Navigation.html'); ?></div>
+<section id="loadable-content"></section>
 </div>
+<script>
+function myFunction() {
+    $("#form-load").load('main.html');
+    $("#loadable-content").load('main.html');
+}
+</script>
 <script>
     
     function reloadPage(id){
