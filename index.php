@@ -9,25 +9,25 @@
 
 <body>
     
-<div style="margin: 0% 40% 3% 40%"><script>$("#loadable-content").load('Navigation.html');</script></div>
-<section id="loadable-content"><script>$("#loadable-content").load('main.html');</script></section>
+<div style="margin: 0% 40% 3% 40%"><?php echo file_get_contents('Navigation.php'); ?></div>
+<section id="loadable-content"><?php echo file_get_contents('main.php'); ?></section>
 </div>
 <script>
     function reloadPage(id){
     if (id == "home-id"){
-        $("#loadable-content").load('main.html');
+        $("#loadable-content").load('main.php');
     }
     else if (id == "links-id"){
-        $("#loadable-content").load('links.html');
+        $("#loadable-content").load('links.php');
     }
     else if (id == "message-id"){
-        $("#loadable-content").load('message.html');
+        $("#loadable-content").load('message.php');
     }
     else if (id == "photos-id"){
-        $("#loadable-content").load('photos.html');
+        $("#loadable-content").load('photos.php');
     }
     else if (id == "socials-id"){
-        $("#loadable-content").load('socials.html');
+        $("#loadable-content").load('socials.php');
     }
     }
 </script>
