@@ -10,7 +10,7 @@
 <body>
     
 <div style="margin: 0% 40% 3% 40%"><?php echo file_get_contents('Navigation.html'); ?></div>
-<section id="loadable-content"><?php echo file_get_contents('main.html'); ?></section>
+<section id="loadable-content"><script>$("#loadable-content").load('main.html');</script></section>
 </div>
 <script>
     function reloadPage(id){
