@@ -7,14 +7,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body onload="myFunction()">
     
-<div style="margin: 0% 40% 3% 40%" id="form-load"><?php echo file_get_contents('Navigation.html'); ?></div>
+<div style="margin: 0% 40% 3% 40%" id="form-load"></div>
 <section id="loadable-content"></section>
 </div>
 <script>
 function myFunction() {
-    $("#form-load").load('main.html');
+    $("#form-load").load('Navigation.html');
     $("#loadable-content").load('main.html');
 }
 </script>
