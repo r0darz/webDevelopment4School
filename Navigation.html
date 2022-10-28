@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Magic Menu Indicator</title>
+  </head>
+  <body>
+    <div>
+      <div class="navigation">
+        <ul>
+          <li class="list active">
+            <a href="#" id="home-id" onclick="reloadPage(this.id)">
+              <span class="icon"
+                ><ion-icon name="home-outline"></ion-icon
+              ></span>
+              <span class="text">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" id="links-id" onclick="reloadPage(this.id)">
+              <span class="icon"
+                ><ion-icon name="link-outline"></ion-icon
+                  ></span>
+              <span class="text">Links</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" id="message-id" onclick="reloadPage(this.id)">
+              <span class="icon"
+                ><ion-icon name="chatbubble-outline"></ion-icon
+              ></span>
+              <span class="text">Message</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" id="photos-id" onclick="reloadPage(this.id)">
+              <span class="icon"
+                ><ion-icon name="image-outline"></ion-icon
+              ></span>
+              <span class="text">Photos</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" id="socials-id" onclick="reloadPage(this.id)">
+              <span class="icon"
+                ><ion-icon name="share-social-outline"></ion-icon></span>
+              <span class="text">Sosyal Medya</span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const list = document.querySelectorAll(".list");
+      function activeLink() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((item) => item.addEventListener("click", activeLink));
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
