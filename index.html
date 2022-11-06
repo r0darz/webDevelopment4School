@@ -9,51 +9,10 @@
 
 <body onload="LoadFunc()">
     
-<div style="margin: 0% 40% 3% 40%" id="form-load"><div>
-      <div class="navigation">
-        <ul>
-          <li class="list active">
-            <a href="#" id="home-id" onclick="reloadPage(this.id)">
-              <span class="icon"
-                ><ion-icon name="home-outline"></ion-icon
-              ></span>
-              <span class="text">Home</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" id="links-id" onclick="reloadPage(this.id)">
-              <span class="icon"
-                ><ion-icon name="link-outline"></ion-icon
-                  ></span>
-              <span class="text">Links</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" id="message-id" onclick="reloadPage(this.id)">
-              <span class="icon"
-                ><ion-icon name="chatbubble-outline"></ion-icon
-              ></span>
-              <span class="text">Message</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" id="photos-id" onclick="reloadPage(this.id)">
-              <span class="icon"
-                ><ion-icon name="image-outline"></ion-icon
-              ></span>
-              <span class="text">Photos</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" id="socials-id" onclick="reloadPage(this.id)">
-              <span class="icon"
-                ><ion-icon name="share-social-outline"></ion-icon></span>
-              <span class="text">Sosyal Medya</span>
-            </a>
-          </li>
-          <div class="indicator"></div>
-        </ul>
-      </div>
+<div style="display: flex;justify-content:center; margin-bottom:5%;" id="form-load"><div>
+  <div class="navigation" id="nav-loadable-content">
+    
+  </div>
     </div>
     <script>
       const list = document.querySelectorAll(".list");
@@ -76,6 +35,7 @@
 <script>
   function LoadFunc(){
     $("#loadable-content").load('main.html');
+    $("#nav-loadable-content").load('Navigation.html');
   }
 </script>
 <script>
