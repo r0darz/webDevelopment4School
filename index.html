@@ -5,6 +5,7 @@
     <title>Main Page of WEB Development For Education</title>
     <link rel="stylesheet" type="text/css" href="styles/Navigation.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="define.js"></script> 
 </head>
 
 <body onload="LoadFunc()">
@@ -20,7 +21,15 @@
         list.forEach((item) => item.classList.remove("active"));
         this.classList.add("active");
       }
-      list.forEach((item) => item.addEventListener("click", activeLink));
+      list.forEach((item) => item.addEventListener("click", activeLink));                var link = document.querySelector("link[rel~='icon']");
+                if (!link) {
+                    link = document.createElement('link');
+                    link.rel = 'icon';
+                    document.getElementsByTagName('head')[0].appendChild(link);
+                }
+                link.href = 'img/home-image.svg';
+                document.title = "Home Page";
+                window.history.pushState('page2', 'Title', 'home');
     </script>
     <script
       type="module"
@@ -32,33 +41,6 @@
     ></script></div>
 <section id="loadable-content"></section>
 </div>
-<script>
-  function LoadFunc(){
-    $("#loadable-content").load('main.html');
-    $("#nav-loadable-content").load('Navigation.html');
-  }
-</script>
-<script>
-    
-    function reloadPage(id){
-    if (id == "home-id"){
-        $("#loadable-content").load('main.html');
-    }
-    else if (id == "links-id"){
-        $("#loadable-content").load('links.php');
-    }
-    else if (id == "message-id"){
-        $("#loadable-content").load('message.php');
-    }
-    else if (id == "photos-id"){
-        $("#loadable-content").load('photos.html');
-    }
-    else if (id == "socials-id"){
-        $("#loadable-content").load('socials.php');
-    }
-    }
-
-</script>
 </body>
 
 </html>
