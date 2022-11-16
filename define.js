@@ -63,5 +63,5 @@ function LoadFunc() {
 }
 
 function redir() {
-  window.location.href = "http://localhost/";
+  window.location.href = "index.html";
 }
