@@ -8,7 +8,7 @@
     <td class="categories"><h4>Nesne Tabanli Programlama</h4></td>
   </tr>
   <tr>
-    <td>something</td>
+    <td><a href="links/index.html">deneme</a></td>
     <td>something</td>
     <td>something</td>
     <td>something</td>
