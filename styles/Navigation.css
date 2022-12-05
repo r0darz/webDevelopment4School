@@ -159,3 +159,7 @@ td{
 p {
   cursor:pointer;
 }
+.navigation ::selection{
+  color:none;
+  background-color: none;
+}

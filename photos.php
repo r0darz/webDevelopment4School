@@ -2,7 +2,7 @@
 <html>
 <table>
   <tr>
-    <td class="categories"><h4>Message</h4></td>
+    <td class="categories"><h4>Photos</h4></td>
     <td class="categories"><h4>WEB Tasarim</h4></td> 
     <td class="categories"><h4>Grafik Animasyon</h4></td>
     <td class="categories"><h4>Nesne Tabanli Programlama</h4></td>

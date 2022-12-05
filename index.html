@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html>
+  <!--
+  TODO     make it working
+  ! <style>
+  !      .Navigation::selection {
+  !      color: none;
+  !      background: none;
+  !      } 
+  !      </style> 
+  *        currently not working
+  -->
 
 <head>
     <title>Main Page of WEB Development For Education</title>
@@ -21,7 +31,8 @@
         list.forEach((item) => item.classList.remove("active"));
         this.classList.add("active");
       }
-      list.forEach((item) => item.addEventListener("click", activeLink));                var link = document.querySelector("link[rel~='icon']");
+      list.forEach((item) => item.addEventListener("click", activeLink));
+       var link = document.querySelector("link[rel~='icon']");
                 if (!link) {
                     link = document.createElement('link');
                     link.rel = 'icon';

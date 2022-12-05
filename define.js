@@ -1,6 +1,6 @@
 function reloadPage(id) {
   if (id == "home-id") {
-    $("#loadable-content").load("main.html");
+    $("#loadable-content").load("main.php");
     var link = document.querySelector("link[rel~='icon']");
     if (!link) {
       link = document.createElement("link");
@@ -33,7 +33,7 @@ function reloadPage(id) {
     document.title = "Contact me!";
     window.history.pushState("page2", "Title", "contact");
   } else if (id == "photos-id") {
-    $("#loadable-content").load("photos.html");
+    $("#loadable-content").load("photos.php");
     var link = document.querySelector("link[rel~='icon']");
     if (!link) {
       link = document.createElement("link");
@@ -58,8 +58,11 @@ function reloadPage(id) {
 }
 
 function LoadFunc() {
-  $("#loadable-content").load("main.html");
+  $("#loadable-content").load("main.php");
   $("#nav-loadable-content").load("Navigation.html");
+}
+function loadContent(){
+  $("#loadable-content-for-nav").load("ProjectsNavigator.html");
 }
 
 function redir() {

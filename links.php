@@ -1,61 +1,25 @@
 <!DOCTYPE html>
 <html>
+<body>
+<div style="width:15%; float:left" class="Side-Nav-Menu">
+<?php include 'ProjectsNavigator.php';?>
+</div>
+<div style="width:85%; float:right" class="projects-loadable-content">
 <table>
   <tr>
-    <td class="categories"><h4>Links</h4></td>
-    <td class="categories"><h4>WEB Tasarim</h4></td> 
-    <td class="categories"><h4>Grafik Animasyon</h4></td>
-    <td class="categories"><h4>Nesne Tabanli Programlama</h4></td>
+    <td class="categories"><h4>Project</h4></td>
+    <td class="categories"><h4>Links</h4></td> 
   </tr>
   <tr>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
+    <td>All Project Links</td>
+    <td>Will Be Shown In</td>
   </tr>
   <tr>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
-  </tr>
-  <tr>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
+    <td>Side Navigation Menu</td>
+    <td>Left To Here</td>
   </tr>
 </table>
-<footer>
-<table id="foo">
-  <tr>
-    <td class="categories-footer">Footer 1</td>
-    <td class="categories-footer">Footer 2</td> 
-    <td class="categories-footer">Footer 3</td>
-    <td class="categories-footer">Footer 4</td>
-    <td class="categories-footer">Footer 5</td>
-  </tr>
-  <tr>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
-  </tr>
-  <tr>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
-  </tr>
-  <tr>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
-    <td>something</td>
-  </tr>
-</table>
-</footer>
+</div>
+  <?php include 'footer.php';?>
+</body>
 </html>
